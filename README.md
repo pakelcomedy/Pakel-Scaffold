@@ -20,7 +20,7 @@ python make_project.py
 ---
 ```
 Pakel-Scaffold/
-├── 📁 public/                # Semua aset publik (akan di-deploy ke GitHub Pages)
+├── 📁 docs/                # Semua aset publik (akan di-deploy ke GitHub Pages)
 │   ├── 📄 index.html         # Halaman utama UI web
 │   ├── 📄 styles.css         # Styling halaman
 │   ├── 📄 script.js          # Logika frontend (parser, renderer, ZIP)
