@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakel Scaffold</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>Pakel Scaffold</h1>
+      <p>Convert your ASCII-tree project outline into a downloadable ZIP structure instantly.</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container controls">
+      <label for="ascii-input" class="textarea-label">Project Structure (ASCII-tree):</label>
+      <textarea id="ascii-input" spellcheck="false" placeholder="Pakel-Scaffold/
+├── public/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+├── src/
+│   └── make_project.py
+└── README.md
+"></textarea>
+
+      <div class="buttons">
+        <button id="parse-btn" class="primary">Parse Structure</button>
+        <button id="download-zip-btn" disabled>Download ZIP</button>
+      </div>
+    </div>
+
+    <section id="output">
+      <div class="container">
+        <h2>Structure Preview</h2>
+        <p class="hint">Click on folders to expand or collapse.</p>
+        <ul id="tree-root" class="tree"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Pakel Scaffold &middot; <a href="https://github.com/pakelcomedy/Pakel-Scaffold" target="_blank" rel="noopener">View on GitHub</a></small>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
